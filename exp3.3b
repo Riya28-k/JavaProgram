@@ -1,0 +1,37 @@
+imort java.util.scanner;
+abstrct class shape{
+double dim1,dim2;
+public shape(double dim1,double dim2){
+this.dim1 = dim1;
+this.dim2 = dim2;
+}
+abstract void area()
+}
+class rectanagle extends shape{
+public rectangle(double dim1,double dim2){
+super(dim1,dim2)
+}
+void area(){
+System.out.println("Area of rectangle: " (dim1*dim2));
+}
+}
+class triangle extends shape{
+public triangle(double dim1,double dim2){
+super(dim1,dim2)
+}
+void area(){
+System.out.println("Area of triangle: " (0.5*dim1*dim2));
+}
+}
+public class area{
+public static void main(String args[]){
+Scanner scanner = new Scanner(System.in);
+System.out.println("Enter length and breadth of rectangle: ");
+Rectangle rect = new Rectangle(Scanner.doubleNext(),Scanner.doubleNext());
+rect area();
+System.out.println("Enter base and height of triangle: ");
+Triangle tri = new Triangle(Scanner.doubleNext(),scanner.doubleNext());
+tri area();
+scanner close(); 
+}
+}

@@ -1,0 +1,43 @@
+import java.util.sacnner;
+class bank account{
+protected double balance;
+public bankamount(double initialBalance){
+this.balance=initialBalance;
+}
+public void deposite(double amount){
+balance+=amount;
+System.out.println("deposited: "+amount+ ,"new balance: "+balance);
+}
+public void withdraw(double amount){
+if(balance>=amount){
+balance-=amount;
+System.out.println("withdraw: "+amount+, "new balance: "+balance);
+}else{
+System.out.println("insufficint balance!!");
+}
+}
+}
+class SavingAccount extends BankAccount(){
+if(balance-amount>=100){
+balance-=amount;
+System.out.println("withdrawn: "+amount+, "new balance: "+balance);
+}else{
+System.out.println("you cannot withdraw amount);
+}
+}
+}
+public class main{
+public static void main(String args[]){
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter initial balance: ");
+double initialBalance = scanner.nextDouble();
+SavingsAccount obj = new SavingsAccount(initialBalance);
+System.out.print("Enter deposit amount: ");
+obj.deposit(scanner.nextDouble());
+System.out.print("Enter withdrawal amount: ");
+obj.withdraw(scanner.nextDouble());
+scanner.close();
+ }
+}
+
+

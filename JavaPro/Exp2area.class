@@ -1,0 +1,19 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+import java.util.Scanner;
+
+public class Exp2area {
+   public Exp2area() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      Area var2 = new Area();
+      System.out.print("Enter length of the rectangle: ");
+      double var3 = var1.nextDouble();
+      System.out.print("Enter breadth of the rectangle: ");
+      double var5 = var1.nextDouble();
+      var2.setDim(var3, var5);
+      System.out.println("Area of the rectangle: " + var2.getArea());
+      var1.close();
+   }
+}
